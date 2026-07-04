@@ -114,7 +114,7 @@ main > section {
 }
 
 .card-content img {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     border-radius: 4px;
     margin-top: 1rem;
