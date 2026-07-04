@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Raphael Omonayin</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Raphael Omonayin. Learn web development fundamentals including HTML, CSS, and JavaScript in this comprehensive course.">
+    <meta name="author" content="Raphael Omonayin">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Welcome Onboard</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Raphael Omonayin</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>
+                    My name is Raphael Omonayin and I am passionate about web development. I was born in Kogi state Nigeria and currently reside in ibadan. I am pursuing a career in software development and love learning new technologies and best practices in innovative design.
+                </p>
+                <img src="images/profile.jpeg" alt="my profile">
+                <h3>Kogi State, Nigeria</h3>
+                <p>
+                    Kogi is a state blessed with mineral and human resources and situated at the centre of Nigeria.It is a beautiful place known for its mineral wealth. It is largely based around agriculture, mainly of coffee, cashew, groundnut, cocoa, oil palm, and yam crops. Other key industries are transport service and Logistics.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                    <li><a href="https://developer.chrome.com">Chrome DevTools</a></li>
+                    <li><a href="https://github.com">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Raphael Omonayin | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
