@@ -174,15 +174,18 @@ footer {
     border-top: 2px solid #e8e2d8;
     font-size: 0.9rem;
     color: #4a4a4a;
+    background-color: #1a2a4a;
+    border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
 footer p:first-child {
     font-weight: 500;
-    color: #1a2a4a;
+    color: white;
 }
 
 #last-modified {
     font-size: 0.8rem;
-    color: #777;
+    color: white;
     margin-top: 0.25rem;
 }
