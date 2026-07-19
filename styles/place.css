@@ -1,0 +1,179 @@
+:root {
+    --primary: #008751;      /* green */
+    --secondary: #ffffff;    /* white */
+    --accent: #1a3b2f;       /* dark green for contrast */
+    --text: #1e1e1e;
+    --bg: #f5f5f0;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --radius: 12px;
+    --font: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.hero {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: var(--primary);
+}
+
+.hero picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    color: white;
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 135, 81, 0.7);
+    padding: 0.25rem 1.5rem;
+    border-radius: 40px;
+    backdrop-filter: blur(4px);
+}
+
+section {
+    background: var(--card-bg);
+    padding: 1.8rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border-left: 6px solid var(--primary);
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-section h2::after {
+    content: "⛅";
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .weather-section h2::after {
+        display: none;
+    }
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.6rem 2rem;
+    align-items: baseline;
+}
+
+dt {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+dd {
+    margin: 0;
+    font-weight: 400;
+}
+
+.weather-icon-mobile {
+    display: none;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 640px) {
+    .weather-icon-mobile {
+        display: block;
+    }
+}
+
+.weather-icon-mobile svg {
+    width: 48px;
+    height: 48px;
+    fill: currentColor;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.75rem;
+    }
+    section {
+        padding: 1.25rem;
+    }
+    dl {
+        gap: 0.4rem 1rem;
+        font-size: 0.95rem;
+    }
+    .hero h1 {
+        left: 1rem;
+        bottom: 1rem;
+        padding: 0.2rem 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    main {
+        gap: 2rem;
+    }
+    section {
+        padding: 1.8rem;
+    }
+}
+
+footer {
+    margin-top: 2.5rem;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    border-top: 2px solid var(--primary);
+    color: #444;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+footer #last-modified {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+#windchill-display {
+    font-weight: 600;
+    color: var(--primary);
+}
