@@ -1,7 +1,7 @@
 :root {
-    --primary: #008751;      /* green */
-    --secondary: #ffffff;    /* white */
-    --accent: #1a3b2f;       /* dark green for contrast */
+    --primary: #008751;      
+    --secondary: #ffffff;    
+    --accent: #1a3b2f;       
     --text: #1e1e1e;
     --bg: #f5f5f0;
     --card-bg: #ffffff;
@@ -48,19 +48,20 @@ main {
     object-fit: cover;
 }
 
-.hero h1 {
-    position: absolute;
-    bottom: 1.5rem;
+header{
+    /* position: absolute; */
+    top: 1.5rem;
     left: 2rem;
     color: white;
-    font-size: clamp(2rem, 8vw, 4rem);
-    font-weight: 700;
+    font-size: clamp(2rem, 8vw, 2rem);
+    font-weight: 500;
     letter-spacing: 0.02em;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-    background: rgba(0, 135, 81, 0.7);
+    text-align: center;
+    /* background: rgba(0, 135, 81, 0.7); */
     padding: 0.25rem 1.5rem;
-    border-radius: 40px;
-    backdrop-filter: blur(4px);
+    /* border-radius: 40px; */
+    /* backdrop-filter: blur(4px); */
 }
 
 section {
