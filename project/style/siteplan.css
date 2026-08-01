@@ -1,0 +1,230 @@
+/* ---------- COLOR SCHEMA (applied to this document) ---------- */
+:root {
+    --primary-blue: #2A5C7A;
+    --primary-gold: #F4A261;
+    --bg-cream: #FFFDF7;
+    --text-dark: #2D3E3A;
+    --white: #FFFFFF;
+    --shadow: 0 4px 16px rgba(42, 92, 122, 0.12);
+    --radius: 12px;
+}
+
+/* ---------- GLOBAL RESET & TYPOGRAPHY ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif; /* Primary body font */
+    background: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.7;
+    padding: 2rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---------- HEADINGS (Playfair Display) ---------- */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.6rem;
+    border-bottom: 4px solid var(--primary-gold);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    border-left: 6px solid var(--primary-gold);
+    padding-left: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: var(--primary-blue);
+}
+
+/* ---------- NAVIGATION (Table of Contents) ---------- */
+nav {
+    background: var(--primary-blue);
+    padding: 1rem 1.8rem;
+    border-radius: var(--radius);
+    margin: 1.5rem 0 2.5rem 0;
+    box-shadow: var(--shadow);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem 2rem;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: 0.2s;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: var(--primary-gold);
+    color: var(--text-dark);
+}
+
+/* ---------- SECTION CARDS ---------- */
+section {
+    background: var(--white);
+    padding: 1.8rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2.2rem;
+    border: 1px solid #f0f0f0;
+}
+
+/* ---------- TABLES (for Color & Typography) ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+th {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #e8edf0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ---------- DEFINITION LIST (for Scenarios) ---------- */
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.8rem 1.5rem;
+    margin: 1rem 0;
+}
+
+dt {
+    font-weight: 800;
+    color: var(--primary-blue);
+    background: #eef4f7;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+dd {
+    margin: 0;
+    padding: 0.3rem 0;
+}
+
+/* ---------- WIREFRAMES (Figure + Figcaption) ---------- */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.2rem;
+}
+
+figure {
+    background: #f8fafb;
+    border: 2px dashed var(--primary-gold);
+    border-radius: var(--radius);
+    padding: 1.2rem 1rem;
+    text-align: center;
+}
+
+figure figcaption {
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    background: var(--bg-cream);
+    display: inline-block;
+    padding: 0.2rem 1.2rem;
+    border-radius: 30px;
+}
+
+.wireframe-box {
+    font-family: 'Nunito', monospace;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    text-align: left;
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #dce3e6;
+    white-space: pre-wrap;
+    word-break: break-all;
+    color: var(--text-dark);
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* ---------- MISC ---------- */
+.badge {
+    background: var(--primary-gold);
+    color: var(--text-dark);
+    font-weight: 700;
+    padding: 0.1rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--primary-blue);
+    border-top: 2px solid var(--primary-gold);
+    padding-top: 1.5rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 700px) {
+    body { padding: 1rem; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    .wireframe-container { grid-template-columns: 1fr; }
+    dl { grid-template-columns: 1fr; gap: 0.3rem; }
+    dt { white-space: normal; }
+    nav ul { gap: 0.8rem; }
+}

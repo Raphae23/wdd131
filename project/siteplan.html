@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralph's Pet Store </title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Raphael Omonayin. Learn web development fundamentals including HTML, CSS, and JavaScript in this comprehensive course.">
+    <title> 🐾 Ralph Pet Store </title>
+    <meta name="description" content="Site Plan - Ralph Pet Store website is a comprehensive resource for dog owners and those considering adoption.">
     <meta name="author" content="Raphael Omonayin">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/siteplan.css">
 </head>
 <body>
-
     <header>
         <h1>🐾 Ralph Pet Store — Site Plan</h1>
-        <p><strong>Logo Concept:</strong> A friendly paw print with a playful bone, rendered in warm gold and deep blue.</p>
+        <p>
+            <span class="badge">Logo Concept</span> A friendly simple paw print, rendered in warm gold and deep blue.
+        </p>
     </header>
-
-    <nav>
+    <nav aria-label="Table of contents">
         <ul>
             <li><a href="#site-name">Site Name</a></li>
             <li><a href="#purpose">Purpose</a></li>
@@ -29,32 +28,30 @@
             <li><a href="#wireframes">Wireframes</a></li>
         </ul>
     </nav>
-
-    
     <main>
 
         <section id="site-name">
             <h2>1. Site Name</h2>
-            <p><strong>Site Name:</strong> Ralph &amp; Pet Store</p>
+            <p><strong>Site Name:</strong> <span style="font-size: 1.8rem; font-weight:800; color:var(--primary-blue);">Ralph Pet Store</span></p>
             <p><strong>Reason for choosing this name:</strong></p>
             <p>
-                The name <em>Ralph &amp; Pet Store</em> instantly conveys a personal, trustworthy, and pet-focused identity.
-                It is short, memorable, and easy to spell, making it ideal for word-of-mouth sharing. The word <strong>"Ralph"</strong> adds a human touch, suggesting a friendly, approachable business, while <strong>"Pet Store"</strong> clearly indicates the nature of the services offered.
+                The name <em>Ralph Pet Store</em> is straightforward and memorable, immediately indicating the nature of the business.
+                It suggests a reliable, local pet store where customers can find everything they need for their pets.
             </p>
         </section>
 
         <section id="purpose">
             <h2>2. Site Purpose</h2>
             <p>
-                <strong>Paws &amp; Play</strong> serves as a welcoming digital community hub for current and aspiring dog owners.
+                <strong>Ralph Pet Store</strong> serves as a welcoming digital community hub for current and aspiring dog owners.
                 The site provides three core services:
             </p>
-            <ul>
+            <ul style="margin: 0.8rem 0 0 1.5rem;">
                 <li><strong>Adoption Discovery:</strong> Showcasing popular, adoptable dog breeds with key traits to help potential owners find their perfect match.</li>
                 <li><strong>Practical Care Education:</strong> Offering bite-sized, beginner-friendly guides on feeding, grooming, and basic training to build confidence in new pet parents.</li>
                 <li><strong>Local Connection:</strong> Providing information on local adoption centers, operating hours, and a direct contact channel for inquiries.</li>
             </ul>
-            <p>
+            <p style="margin-top: 0.8rem;">
                 The overarching goal is to reduce pet surrender rates by ensuring that every new dog owner feels prepared, supported, and connected to a caring community.
             </p>
         </section>
@@ -80,7 +77,10 @@
 
         <section id="color-schema">
             <h2>4. Color Schema</h2>
-            <p>The table below shows each color, its hex code, a visual swatch, and its exact application across the actual website.</p>
+            <p>
+                I have selected a warm, inviting, and trustworthy palette. The table below shows each color, its hex code, and its exact application across the site.
+                <span style="background:var(--primary-gold); padding:0.1rem 0.6rem; border-radius:12px; font-weight:600;">(These colors are applied to this very document to demonstrate the theme.)</span>
+            </p>
 
             <table>
                 <thead>
@@ -95,25 +95,25 @@
                     <tr>
                         <td><strong>Primary Brand (Blue)</strong></td>
                         <td><code>#2A5C7A</code></td>
-                        <td><span class="swatch" style="background:#2A5C7A;"></span></td>
+                        <td><span class="color-swatch" style="background:#2A5C7A;"></span></td>
                         <td>Navigation bar background, main headings (H1, H2), footer background, primary button backgrounds, hyperlink hover states.</td>
                     </tr>
                     <tr>
                         <td><strong>Secondary Brand (Gold)</strong></td>
                         <td><code>#F4A261</code></td>
-                        <td><span class="swatch" style="background:#F4A261;"></span></td>
+                        <td><span class="color-swatch" style="background:#F4A261;"></span></td>
                         <td>Accent elements (active nav link underline), card borders, interactive icons (like the "Favorite" heart), and call-to-action highlights.</td>
                     </tr>
                     <tr>
                         <td><strong>Background (Cream)</strong></td>
                         <td><code>#FFFDF7</code></td>
-                        <td><span class="swatch" style="background:#FFFDF7; border:1px solid #999;"></span></td>
+                        <td><span class="color-swatch" style="background:#FFFDF7; border:1px solid #ccc;"></span></td>
                         <td>Main page background, card backgrounds, and input fields to create a soft, clean, and readable canvas.</td>
                     </tr>
                     <tr>
                         <td><strong>Body Text</strong></td>
                         <td><code>#2D3E3A</code></td>
-                        <td><span class="swatch" style="background:#2D3E3A;"></span></td>
+                        <td><span class="color-swatch" style="background:#2D3E3A;"></span></td>
                         <td>All paragraphs, list items, and general body copy to ensure high readability with low eye-strain.</td>
                     </tr>
                 </tbody>
@@ -122,7 +122,7 @@
 
         <section id="typography">
             <h2>5. Typography</h2>
-            <p>To balance friendliness with readability, the actual website will use exactly <strong>two</strong> Google Fonts. Their applications are outlined below:</p>
+            <p>To balance friendliness with readability, I have selected exactly <strong>two</strong> Google Fonts. Their applications are outlined below:</p>
 
             <table>
                 <thead>
@@ -135,21 +135,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Nunito</strong></td>
+                        <td><strong style="font-family:'Nunito',sans-serif;">Nunito</strong></td>
                         <td>Sans-Serif (Rounded)</td>
                         <td>400, 600, 800</td>
                         <td>
                             <strong>Primary Body Font:</strong> Used for all navigation links, paragraphs, card descriptions, lists, and form labels.
                             The rounded terminals give it a friendly, approachable feel that matches the pet niche.
+                            <span style="display:block; background:#f0f4f6; padding:0.2rem 0.6rem; margin-top:0.3rem; border-radius:6px; font-family:'Nunito',sans-serif;">
+                                <span style="font-weight:400;">Regular 400</span> · 
+                                <span style="font-weight:600;">Semi-Bold 600</span> · 
+                                <span style="font-weight:800;">Extra-Bold 800</span>
+                            </span>
                         </td>
                     </tr>
                     <tr>
-                        <td><strong>Playfair Display</strong></td>
+                        <td><strong style="font-family:'Playfair Display',serif;">Playfair Display</strong></td>
                         <td>Serif (High Contrast)</td>
                         <td>700 (Bold)</td>
                         <td>
                             <strong>Headings &amp; Titles:</strong> Used exclusively for H1, H2, and H3 headings (e.g., "Find Your Furry Friend," "Care Guides").
                             The elegant contrast of this serif against the rounded sans-serif creates a premium, trustworthy editorial feel for the main titles.
+                            <span style="display:block; background:#f0f4f6; padding:0.2rem 0.6rem; margin-top:0.3rem; border-radius:6px; font-family:'Playfair Display',serif; font-weight:700;">
+                                Playfair Display 700 — Bold
+                            </span>
                         </td>
                     </tr>
                 </tbody>
@@ -163,11 +171,11 @@
                 These demonstrate the structural relationship of elements (Hero, Breed Grid, Footer) in both <strong>Desktop</strong> and <strong>Mobile</strong> views.
             </p>
 
-            <div class="wireframe-row">
+            <div class="wireframe-container">
 
                 <figure>
                     <figcaption>📱 Mobile View (Single Column)</figcaption>
-                    <pre class="wireframe-box">
+                    <div class="wireframe-box">
 +----------------------------------+
 | [🐾 Logo]  ☰ (Hamburger Menu)    |  &lt;-- Sticky Nav (Blue bg)
 +----------------------------------+
@@ -189,13 +197,13 @@
 |  +--------+  +--------+          |
 +----------------------------------+
 |  Footer (Links, Copyright)        |
-+----------------------------------+</pre>
++----------------------------------+
+                    </div>
                 </figure>
 
-                <!-- Desktop -->
                 <figure>
                     <figcaption>🖥️ Desktop View (Wider, Multi-Column)</figcaption>
-                    <pre class="wireframe-box">
+                    <div class="wireframe-box">
 +----------------------------------------------------------------------------------+
 | [🐾 Logo]   Home    Care Guides    About & Contact     [Search]                  |  &lt;-- Horizontal Nav (Blue)
 +----------------------------------------------------------------------------------+
@@ -215,19 +223,18 @@
 |  +------------+  +------------+  +------------+  +------------+                 |
 +----------------------------------------------------------------------------------+
 |  Footer (4 columns: About, Quick Links, Hours, Social Icons)                     |
-+----------------------------------------------------------------------------------+</pre>
++----------------------------------------------------------------------------------+
+                    </div>
                 </figure>
 
             </div>
-            <p><strong>Note:</strong> These are Just structural layouts only. Actual content (text, images, icons) will be populated during development.</p>
         </section>
 
     </main>
 
-
     <footer>
         <p>
-          ♠️  <strong>Ralph &amp; Pet Store </strong> ♠️
+          ♠️  <strong>Ralph Pet Store</strong> ♠️ 
         </p>
     </footer>
 
