@@ -1,4 +1,3 @@
-/* ---------- COLOR SCHEMA (applied to this document) ---------- */
 :root {
     --primary-blue: #2A5C7A;
     --primary-gold: #F4A261;
@@ -9,7 +8,6 @@
     --radius: 12px;
 }
 
-/* ---------- GLOBAL RESET & TYPOGRAPHY ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +24,6 @@ body {
     margin: 0 auto;
 }
 
-/* ---------- HEADINGS (Playfair Display) ---------- */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -55,7 +52,6 @@ h3 {
     color: var(--primary-blue);
 }
 
-/* ---------- NAVIGATION (Table of Contents) ---------- */
 nav {
     background: var(--primary-blue);
     padding: 1rem 1.8rem;
@@ -87,7 +83,6 @@ nav a:hover {
     color: var(--text-dark);
 }
 
-/* ---------- SECTION CARDS ---------- */
 section {
     background: var(--white);
     padding: 1.8rem 2rem;
@@ -97,7 +92,6 @@ section {
     border: 1px solid #f0f0f0;
 }
 
-/* ---------- TABLES (for Color & Typography) ---------- */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -132,7 +126,6 @@ tr:last-child td {
     border: 1px solid #ccc;
 }
 
-/* ---------- DEFINITION LIST (for Scenarios) ---------- */
 dl {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -155,7 +148,6 @@ dd {
     padding: 0.3rem 0;
 }
 
-/* ---------- WIREFRAMES (Figure + Figcaption) ---------- */
 .wireframe-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -198,7 +190,6 @@ figure figcaption {
     overflow-x: auto;
 }
 
-/* ---------- MISC ---------- */
 .badge {
     background: var(--primary-gold);
     color: var(--text-dark);
@@ -218,7 +209,6 @@ footer {
     padding-top: 1.5rem;
 }
 
-/* ---------- RESPONSIVE ---------- */
 @media (max-width: 700px) {
     body { padding: 1rem; }
     h1 { font-size: 2rem; }
