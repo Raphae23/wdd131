@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles/form.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <script src="scripts/products.js" defer></script>
   <script src="scripts/form.js" defer></script>
 </head>
@@ -31,19 +31,19 @@
             <div class="form-group">
                 <label>Overall Rating</label>
                 <div class="star-rating">
-                    <input type="radio" id="star5" name="rating" value="5" required />
+                    <input type="radio" id="star5" name="rating" value="5" required>
                     <label for="star5" title="5 stars">★</label>
 
-                    <input type="radio" id="star4" name="rating" value="4" />
+                    <input type="radio" id="star4" name="rating" value="4" required>
                     <label for="star4" title="4 stars">★</label>
 
-                    <input type="radio" id="star3" name="rating" value="3" />
+                    <input type="radio" id="star3" name="rating" value="3" required>
                     <label for="star3" title="3 stars">★</label>
 
-                    <input type="radio" id="star2" name="rating" value="2" />
+                    <input type="radio" id="star2" name="rating" value="2" required>
                     <label for="star2" title="2 stars">★</label>
 
-                    <input type="radio" id="star1" name="rating" value="1" />
+                    <input type="radio" id="star1" name="rating" value="1" required>
                     <label for="star1" title="1 star">★</label>
                 </div>
                 <p class="helper-text">* All radio buttons share the same <code>name="rating"</code> to ensure only one rating can be selected.</p>
@@ -51,16 +51,28 @@
 
             <div class="form-group">
                 <label for="installDate">Date of Installation</label>
-                <input type="date" id="installDate" name="installDate" required />
+                <input type="date" id="installDate" name="installDate" required>
             </div>
 
             <div class="form-group">
                 <label>Which features did you find useful in the product? <br />(Check all that apply)</label>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="features" value="Durability" /> Durability</label>
-                    <label><input type="checkbox" name="features" value="Ease of Use" /> Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="Performance" /> Performance</label>
-                    <label><input type="checkbox" name="features" value="Design" /> Design</label>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature1" name="features" value="Durability" />
+                        <label for="feature1">Durability</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature2" name="features" value="Ease of Use" />
+                        <label for="feature2">Ease of Use</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature3" name="features" value="Performance" />
+                        <label for="feature3">Performance</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature4" name="features" value="Design" />
+                        <label for="feature4">Design</label>
+                    </div>
                 </div>
             </div>
 

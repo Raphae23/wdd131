@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e8e1eb; /* light grey/purple tone */
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8e1eb; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -14,7 +14,7 @@ body {
 }
 
 header, footer {
-    background-color: #2a1238; /* deep purple */
+    background-color: #2a1238; 
     color: #fff;
     text-align: center;
     padding: 1.2rem 0;
