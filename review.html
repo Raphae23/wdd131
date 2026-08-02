@@ -5,31 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Review Submitted — Product Review</title>
   <link rel="stylesheet" href="styles/form.css">
-  <script src="scripts/products.js"></script>
-  <script src="scripts/review.js"></script>
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/review.js" defer></script>
 </head>
 <body>
 
-  <main class="ticket">
-    <div class="ticket-header">
-      <div class="eyebrow">
-        <span>Form No. 07-A</span>
-        <span id="inspection-no">Inspection No. —</span>
-      </div>
-      <h1 class="ticket-title">Review Received</h1>
-      <p class="ticket-sub">Thanks for filing a report. Here's what was submitted.</p>
-      <div class="stamp" aria-hidden="true">Approved</div>
-    </div>
+ <header>
+        <h1>Product Review</h1>
+    </header>
 
-    <div class="confirm-body">
-      <dl class="summary-list" id="summary-list">
-      </dl>
+    <main>
+        <div class="confirmation-box">
+            <h2>✅ Review Submitted Successfully!</h2>
+            <p>Thank you for your valuable feedback.</p>
+            
+            <div class="counter-box">
+                <p>Total reviews completed so far:</p>
+                <span id="reviewCounter">0</span>
+            </div>
 
-      <p class="counter-note" id="counter-note"></p>
-
-      <a class="back-link" href="form.html">Submit Another Review</a>
-    </div>
-  </main>
+            <a href="form.html" class="back-link">Submit another review</a>
+        </div>
+    </main>
 
   <footer class="site-footer">
     <p>&copy; ♠️ 2026 Raphael Omonayin &middot; Nigeria ♠️ </p>
