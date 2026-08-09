@@ -74,12 +74,12 @@
 
 
     const breeds = [
-        { name: 'Labrador', traits: 'Friendly, energetic, great with kids', img: 'images/puppy6.jpg' },
-        { name: 'Golden Retriever', traits: 'Intelligent, loyal, gentle', img: 'images/puppy5.jpg' },
-        { name: 'French Bulldog', traits: 'Playful, adaptable, low-energy', img: 'images/puppy4.jpg' },
+        { name: 'Golden Retriever', traits: 'Friendly, energetic, great with kids', img: 'images/puppy6.jpg' },
+        { name: 'Labrador', traits: 'Intelligent, loyal, gentle', img: 'images/puppy5.jpg' },
+        { name: 'French Wolf', traits: 'Playful, adaptable, low-energy', img: 'images/puppy4.jpg' },
         { name: 'Beagle', traits: 'Curious, merry, great scent hound', img: 'images/puppy3.jpg' },
         { name: 'Poodle', traits: 'Smart, hypoallergenic, elegant', img: 'images/puppy2.jpg' },
-        { name: 'German Shepherd', traits: 'Brave, confident, protective', img: 'images/puppy1.jpg' }
+        { name: 'Puppy', traits: 'Brave, confident, protective', img: 'images/puppy1.jpg' }
     ];
 
     const breedGrid = document.getElementById('breedGrid');
