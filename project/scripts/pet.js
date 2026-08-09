@@ -79,7 +79,7 @@
         { name: 'French Wolf', traits: 'Playful, adaptable, low-energy', img: 'images/puppy4.jpg' },
         { name: 'Beagle', traits: 'Curious, merry, great scent hound', img: 'images/puppy3.jpg' },
         { name: 'Poodle', traits: 'Smart, hypoallergenic, elegant', img: 'images/puppy2.jpg' },
-        { name: 'Puppy', traits: 'Brave, confident, protective', img: 'images/puppy1.jpg' }
+        { name: 'German Dog', traits: 'Brave, confident, protective', img: 'images/puppy1.jpg' }
     ];
 
     const breedGrid = document.getElementById('breedGrid');
