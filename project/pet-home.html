@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 Ralph & Pet Store — Home</title>
+    <meta name="description" content="Ralph Pet Store website is a comprehensive resource for dog owners and those considering adoption.">
+    <meta name="author" content="Raphael Omonayin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style/pet.css">
+    <script src="./scripts/pet.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🐾 Ralph<span> Pet Store</span></div>
+        <ul class="nav-links">
+            <li><a href="pet-home.html" class="active">Home</a></li>
+            <li><a href="care-guide.html">Care Guides</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section id="page-home" class="page active-page">
+            <div class="hero">
+                <h1>Find Your Furry Friend 🐕</h1>
+                <p>Discover adoptable breeds, get care tips, and connect with a community that loves dogs as much as you do.</p>
+                <a href="care-guide.html" class="cta-btn">Explore Care Guides</a>
+            </div>
+
+            <div class="favorite-count" id="favoriteCount">❤️ Favorites: 0</div>
+            <h2>Popular Breeds</h2>
+            <div class="breed-grid" id="breedGrid">
+                <!-- Breed cards are populated by JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>🐾 Ralph Pet Store</strong> - Built with love for dogs and their humans.</p>
+        <p class="footer-sub">© 2026 · Adoption awareness · Care education · Community</p>
+    </footer>
+
+</body>
+</html>
